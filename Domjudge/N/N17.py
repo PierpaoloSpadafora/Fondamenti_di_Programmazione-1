@@ -1,0 +1,19 @@
+a=[]
+k=0
+s=True
+t=False
+while(s):
+    a.append(int(input()))
+    if(a[-1]==0):
+        a.pop()
+        break
+    else:
+        if(len(a)>1):
+            m=a[-1]
+            n=a[-2]
+            if( ( (m%2)==0 and (n%2)==0 ) or ( (m+n)%m==0 or(m+n)%n==0 ) ):
+                t=True
+if(t):
+    print('SI',end='')
+else:
+    print('NO',end='')

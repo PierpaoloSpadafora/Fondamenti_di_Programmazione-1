@@ -1,0 +1,21 @@
+n=input()
+n+='*'
+i=0
+nv=''
+while(i<len(n)):
+    c=1
+    for j in range(i,len(n)):
+        a=n[j]
+        if(n[j+1]=='*'):
+            nv+=str(c)+a
+            i=len(n)+1
+            break
+        elif(not(n[j+1]==a)):
+            nv+=str(c)+a
+            i=j+1
+            c=0
+            break
+        else:
+            c+=1
+cifre=len(nv)
+print(nv,cifre,end='')
