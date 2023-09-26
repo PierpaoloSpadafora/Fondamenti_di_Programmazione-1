@@ -1,5 +1,4 @@
 # Fondamenti di programmazione 1
----
 
 ## Corso di Fondamenti di Programmazione 1 - UNICAL - A.A. 2021/2022
 
